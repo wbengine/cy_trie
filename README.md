@@ -1,4 +1,6 @@
 
+## Introduction
+
 This is a fast trie structure, written with C++ and compiled to python using Cython.
 
 Compared to the pytrie, which is based the python build-in type dict, 
@@ -17,13 +19,20 @@ Result: (max_order=4, find_epoch=1)
 
 
 
->> Install and compile the trie source codes:
+## Install and compile the trie source codes:
 
 First, you need the python with Cython.
 
-Then run: ''python setup.py build_ext --inplace'' to compile the C++ code
+Then to compile the C++ code,  run: 
+```shell
+python setup.py build_ext --inplace
+```
 
-Then run: ''python test.py'' to evaulate the performance
+Then run
+```shell
+python test.py
+```
+to evaulate the performance.
 
 
 
