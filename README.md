@@ -8,14 +8,16 @@ our method achieves 3 time faster and about half memory usage.
 
 We using the two method to exact all the 4gram features in ptb corpus,
 the results are shwon as follows:
-Result: (max_order=4, find_epoch=1)
 
-+---------------------------------------------------------------+
-|  model       |  create  |  search  |  write  |  memory usage  |
-+---------------------------------------------------------------+
-|  pytrie      |     9.0s |     6s   |    21s  |    about 1B    |
-|  trie        |     2.4s |     2s   |    11s  |    about 500M  |
-+---------------------------------------------------------------+
+**result:** 
+(max_order=4, find_epoch=1)
+
+|---------------------------------------------------------------| 
+|  model       |  create  |  search  |  write  |  memory usage  | 
+|---------------------------------------------------------------| 
+|  pytrie      |     9.0s |     6s   |    21s  |    about 1B    | 
+|  trie        |     2.4s |     2s   |    11s  |    about 500M  | 
+|---------------------------------------------------------------| 
 
 
 
