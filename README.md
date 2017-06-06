@@ -13,9 +13,9 @@ the results are shwon as follows:
 (max_order=4, find_epoch=1)
 
 |  model       |  create  |  search  |  write  |  memory usage  |
-|--------------|----------|----------|---------|----------------|
+| -------------| ---------| ---------| --------| ---------------|
 |  pytrie      |     9.0s |     6s   |    21s  |    about 1B    |
-|  trie        |     2.4s |     2s   |    11s  |    about 500M  |    
+|  trie        |     2.4s |     2s   |    11s  |    about 500M  |
 
 
 
