@@ -4,7 +4,7 @@ import array
 from libcpp cimport bool
 
 ctypedef int KeyT
-ctypedef float DataT
+ctypedef int DataT
 ctypedef ctrie.Trie[KeyT, DataT] cTrie
 ctypedef ctrie.TrieIter[KeyT, DataT] cIter
 ctypedef ctrie.TrieIter1[KeyT, DataT] cIter1
@@ -49,6 +49,10 @@ cdef class Trie:
         else:
             raise MemoryError('Tire has been inilized!')
         return self
+
+    def clean(self):
+        """clean the trie"""
+        self._c_trie.Clean()
         
     def insert(self, key_list, value=None):
         """
